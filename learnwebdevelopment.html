@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Learn Web Development</title>
+<style>
+body {
+
+		}
+
+#wrapper {
+	background-color: #FFC;
+	margin: 0 20%;
+	padding: 20px;
+	}
+
+h1 {
+	text-align: center;
+	}
+	
+h1, h2 {
+	color: #06C;
+	}	
+	
+#description {
+	text-align: center;
+	font-style:italic;
+	}
+	
+main {
+	margin: 0 10%;
+	}		
+
+labels, input {
+	margin: 5px;
+	}
+	
+#name, #email, #number {
+	height: 20px;
+	
+	}	
+
+#dropdown-list {
+	width: 200px;
+	height: 30px;
+	}
+	
+#comments {
+	width: 500px;
+	height: 100px;
+	}
+
+#submit {
+	background-color: #06C;
+	padding: 10px;
+	color: #fff;
+	display: block;
+	margin: 20px auto;
+	}
+</style>
+</head>
+<body>
+<section id="wrapper">
+<header>
+	<h1 id="title">Would you like to learn web development skill?</h1>
+    <p id="description">Complete this short survey to get started.</p>
+    <hr>
+</header>
+
+<main id="main">
+<form id="survey-form">
+<fieldset>
+    <legend><h2>Personal information</h2></legend>
+<label for="name" id="name-label">Name:</label>
+<input type="text" id="name" placeholder="Enter your full name." size="30" required><br>
+<label for="email" id="email-label">Email:</label>
+<input type="text" id="email"  placeholder="Enter a valid email address."  size="30" required><br>
+<label for="number" id="number-label">Age</label>
+<input type="text" id="number"  placeholder="Enter your age."  size="30" min="18" max="65" required><br>
+</fieldset>
+
+<fieldset>
+    <legend><h2>What is your current skill level?</h2></legend>
+<select id="dropdown-list">
+  <option id="dropdown" value="no-experience">No experience</option>
+  <option id="dropdown" value="beginner">Beginner</option>
+  <option id="dropdown" value="intermediate">Intermediate</option>
+  <option id="dropdown" value="advanced">Advanced</option>
+</select>
+</fieldset>
+
+<fieldset>
+    <legend><h2>Would you considering a online training course?</h2></legend>
+<input type="radio" id="absolutely" name="online-training"><label for="absolutely" name="absolutely">Absolutely</label><br>
+<input type="radio" id="absolutely-not" name="online-training"><label for="absolutely-not" name="absolutely-not">Absolutely</label><br>
+<input type="radio" id="possibly" name="online-training"><label for="possibly" name="possibly">Possibly</label>
+</fieldset>
+
+<fieldset>
+    <legend><h2>What areas you need to improve?</h2></legend>
+<input type="checkbox" id="html" name="areas-improve" value="html"><label for="html" name="html">HTML</label><br>
+<input type="checkbox" id="css" name="areas-improve" value="css"><label for="css" name="css">CSS</label><br>
+<input type="checkbox" id="responsive" name="areas-improve" value="responsive"><label for="responsive" name="responsible">Responsive Design</label><br>
+<input type="checkbox" id="javascript" name="areas-improve" value="javascript"><label for="javascript" name="javascript">JavaScript</label><br>
+<input type="checkbox" id="jslibraries" name="areas-improve" value="jslibraries"><label for="jslibraries" name="jslibraries">JS Libraries</label><br>
+<input type="checkbox" id="design" name="areas-improve"  value="design"><label for="design" name="design">Visual Design</label><br>
+<input type="checkbox" id="everything" name="areas-improve" value="everything"><label for="everything" name="everything">Everything</label>
+</fieldset>
+
+
+
+<fieldset>
+<legend><h2>Other comments:</h2></legend>
+<textarea id="comments" placeholder="Please type your comment here"></textarea><br>
+</fieldset>
+
+<input type="submit" id="submit"></input>
+
+</form>
+</main>
+
+</section>
+</body>
+</html>
